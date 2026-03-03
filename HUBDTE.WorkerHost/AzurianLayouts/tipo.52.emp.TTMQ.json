@@ -1,0 +1,40 @@
+{
+  "Layout": {
+
+    "Glosas": [
+      {
+        "seq": 24,
+        "code": "GDESTINO",
+        "valueJsonPath": "gdv.destino"
+      },
+      {
+        "seq": 25,
+        "enabled": false
+      },
+      {
+        "seq": 26,
+        "enabled": false
+      },
+      {
+        "seq": 27,
+        "enabled": false
+      },
+      {
+        "seq": 28,
+        "enabled": false
+      },
+      {
+        "seq": 29,
+        "enabled": false
+      },
+      {
+        "seq": 30,
+        "enabled": false
+      }
+    ]
+
+  }
+}
+
+
+      

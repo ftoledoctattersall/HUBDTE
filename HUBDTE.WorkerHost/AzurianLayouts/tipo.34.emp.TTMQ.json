@@ -1,0 +1,48 @@
+{
+  "Layout": {
+
+    "Glosas": [
+      {
+        "seq": 5,
+        "code": "GMATRIZ",
+        "parts": [
+          { "valueJsonPath": "source.company.direccion" },
+          { "valueLiteral": "-" },
+          { "valueJsonPath": "source.company.comuna" },
+          { "valueLiteral": "-" },
+          { "valueJsonPath": "source.company.ciudad" }
+        ]
+      },
+      {
+        "seq": 18,
+        "code": "GLINEAVTA",
+        "valueJsonPath": "Adicional.adicional19"
+      },
+      {
+        "seq": 19,
+        "code": "GFONORECEP",
+        "valueJsonPath": "receptor.contacto"
+      },
+      {
+        "seq": 20,
+        "enabled": false
+      },
+      {
+        "seq": 21,
+        "enabled": false
+      },
+      {
+        "seq": 22,
+        "enabled": false
+      },
+      {
+        "seq": 23,
+        "enabled": false
+      },
+      {
+        "seq": 24,
+        "enabled": false
+      }
+    ]
+  }
+}

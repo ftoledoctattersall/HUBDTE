@@ -1,0 +1,192 @@
+{
+  "Layout": {
+
+    "HeaderFields": [
+
+      {
+        "Name": "CaracterEspacio_2_E6",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_3_E7",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "DueDate_E17",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": true
+      },
+      {
+        "Name": "SucursalNombre_E24",
+        "Length": 30,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_17_E46",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_18_E47",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_19_E48",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      }
+
+    ],
+    "HeaderMap": [
+      {
+        "FieldName": "CaracterEspacio_2_E6",
+        "JsonPath": "gdv.tipodespacho",
+        "TransformArg": "None"
+      },
+      {
+        "FieldName": "CaracterEspacio_3_E7",
+        "JsonPath": "gdv.indicador",
+        "TransformArg": "None"
+      },
+      {
+        "FieldName": "DueDate_E17",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "transformArg": ""
+      },
+      {
+        "FieldName": "SucursalNombre_E24",
+        "JsonPath": "Adicional.Adicional20",
+        "TransformArg": "None"
+      },
+      {
+        "FieldName": "CaracterEspacio_17_E46",
+        "JsonPath": "despacho.patente",
+        "TransformArg": "None"
+      },
+      {
+        "FieldName": "CaracterEspacio_18_E47",
+        "JsonPath": "despacho.rutConductor",
+        "TransformArg": "None"
+      },
+      {
+        "FieldName": "CaracterEspacio_19_E48",
+        "JsonPath": "despacho.dvConductor",
+        "TransformArg": "None"
+      }
+    ],
+
+    "Glosas": [
+      {
+        "seq": 5,
+        "code": "GMATRIZ",
+        "parts": [
+          { "valueJsonPath": "source.company.direccion" },
+          { "valueLiteral": "-" },
+          { "valueJsonPath": "source.company.comuna" },
+          { "valueLiteral": "-" },
+          { "valueJsonPath": "source.company.ciudad" }
+        ]
+      },
+      {
+        "seq": 16,
+        "code": "GMTRANSPORTE",
+        "valueJsonPath": "gdv.medioTransporte"
+      },
+      {
+        "seq": 17,
+        "code": "GEMPRESA",
+        "valueJsonPath": "gdv.empresaTransporte"
+      },
+      {
+        "seq": 18,
+        "code": "GNCONDUCTOR",
+        "valueJsonPath": "gdv.nombreConductor"
+      },
+      {
+        "seq": 19,
+        "code": "GFECHA",
+        "valueJsonPath": "gdv.fecha"
+      },
+      {
+        "seq": 20,
+        "code": "GRUTCONDUCTOR",
+        "valueJsonPath": "despacho.despacho"
+      },
+      {
+        "seq": 21,
+        "code": "GPATENTE",
+        "valueJsonPath": "despacho.patente"
+      },
+      {
+        "seq": 22,
+        "code": "GLINEAVTA",
+        "valueJsonPath": "Adicional.Adicional19"
+      },
+      {
+        "seq": 23,
+        "code": "GFONORECEP",
+        "valueJsonPath": "gdv.celularContacto"
+      },
+
+      {
+        "seq": 24,
+        "code": "GSUCURSAL1",
+        "valueJsonPath": "Sucursales.sucursal01"
+      },
+      {
+        "seq": 25,
+        "code": "GSUCURSAL2",
+        "valueJsonPath": "Sucursales.sucursal02"
+      },
+
+      {
+        "seq": 26,
+        "code": "GSUCURSAL3",
+        "valueJsonPath": "Sucursales.sucursal03"
+      },
+      {
+        "seq": 27,
+        "code": "GSUCURSAL4",
+        "valueJsonPath": "Sucursales.sucursal04"
+      },
+
+      {
+        "seq": 28,
+        "code": "GSUCURSAL5",
+        "valueJsonPath": "Sucursales.sucursal05"
+      },
+      {
+        "seq": 29,
+        "code": "GSUCURSAL6",
+        "valueJsonPath": "Sucursales.sucursal06"
+      },
+      {
+        "seq": 30,
+        "code": "GDESTINO",
+        "valueJsonPath": "gdv.destino"
+      }
+    ]
+
+  }
+}
+
+
+      

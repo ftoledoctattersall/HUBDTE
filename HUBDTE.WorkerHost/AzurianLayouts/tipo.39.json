@@ -1,0 +1,129 @@
+{
+
+    "Layout": {
+
+      "HeaderFields": [
+        {
+          "name": "CondicionPago_E10",
+          "length": 1,
+          "padChar": "0",
+          "padLeft": false,
+          "trim": false
+        },
+        {
+          "Name": "CaracterCero_1_E8",
+          "Length": 1,
+          "PadChar": "0",
+          "PadLeft": true,
+          "Trim": true
+        },
+        {
+          "Name": "SucursalNombre_E24",
+          "Length": 30,
+          "PadChar": " ",
+          "PadLeft": true,
+          "Trim": false
+        },
+        {
+          "Name": "NombreVendedor_E29",
+          "Length": 60,
+          "PadChar": " ",
+          "PadLeft": true,
+          "Trim": false
+        },
+        {
+          "Name": "GiroReceptor_E36",
+          "Length": 40,
+          "PadChar": " ",
+          "PadLeft": true,
+          "Trim": false
+        }
+
+      ],
+      "HeaderMap": [
+        {
+          "fieldName": "CondicionPago_E10",
+          "jsonPath": "",
+          "transform": "Literal",
+          "transformArg": "0"
+        },
+        {
+          "FieldName": "CaracterCero_1_E8",
+          "JsonPath": "bol.indServicio",
+          "TransformArg": "None"
+        },
+        {
+          "FieldName": "SucursalNombre_E24",
+          "jsonPath": "",
+          "transform": "Literal",
+          "transformArg": ""
+        },
+        {
+          "FieldName": "NombreVendedor_E29",
+          "jsonPath": "",
+          "transform": "Literal",
+          "transformArg": ""
+        },
+        {
+          "FieldName": "GiroReceptor_E36",
+          "jsonPath": "",
+          "transform": "Literal",
+          "transformArg": ""
+        },
+        {
+          "FieldName": "TasaIva_E55",
+          "jsonPath": "",
+          "transform": "Literal",
+          "transformArg": ""
+        }
+      ],
+
+      "Glosas": [
+        {
+          "seq": 5,
+          "code": "GMATRIZ",
+          "parts": [
+            { "valueJsonPath": "source.company.direccion" },
+            { "valueLiteral": "-" },
+            { "valueJsonPath": "source.company.comuna" },
+            { "valueLiteral": "-" },
+            { "valueJsonPath": "source.company.ciudad" }
+          ]
+        },
+        {
+          "seq": 18,
+          "code": "GLINEAVTA",
+          "valueJsonPath": "Adicional.adicional19"
+        },
+        {
+          "seq": 24,
+          "code": "GSUCURSAL6",
+          "valueJsonPath": "Sucursales.sucursal06"
+        },
+        {
+          "seq": 20,
+          "enabled": false
+        },
+        {
+          "seq": 21,
+          "enabled": false
+        },
+        {
+          "seq": 22,
+          "enabled": false
+        },
+        {
+          "seq": 23,
+          "enabled": false
+        },
+        {
+          "seq": 24,
+          "enabled": false
+        }
+      ]
+
+    }
+  }
+
+
+      

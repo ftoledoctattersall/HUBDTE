@@ -1,0 +1,70 @@
+{
+  "Layout": {
+
+    "Glosas": [
+      {
+        "seq": 16,
+        "code": "GSUCURSAL1",
+        "valueJsonPath": "Sucursales.sucursal01"
+      },
+      {
+        "seq": 17,
+        "code": "GSUCURSAL2",
+        "valueJsonPath": "Sucursales.sucursal02"
+      },
+      {
+        "seq": 18,
+        "code": "GSUCURSAL3",
+        "valueJsonPath": "Sucursales.sucursal03"
+      },
+      {
+        "seq": 19,
+        "code": "GSUCURSAL4",
+        "valueJsonPath": "Sucursales.sucursal04"
+      },
+      {
+        "seq": 20,
+        "code": "GSUCURSAL5",
+        "valueJsonPath": "Sucursales.sucursal05"
+      },
+      {
+        "seq": 21,
+        "code": "GSUCURSAL6",
+        "valueJsonPath": "Sucursales.sucursal06"
+      },
+      {
+        "seq": 22,
+        "enabled": false
+      },
+      {
+        "seq": 23,
+        "enabled": false
+      },
+      {
+        "seq": 24,
+        "enabled": false
+      }
+    ],
+
+    "DetailFields": [
+      
+      {
+        "Name": "DescAdic_D63",
+        "Length": 1000,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": true
+      }
+    ],
+
+    "DetailMap": [
+      {
+        "FieldName": "DescAdic_D63",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "transformArg": ""
+      }
+    ]
+
+  }
+}

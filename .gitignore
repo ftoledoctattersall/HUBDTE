@@ -1,0 +1,92 @@
+# =========================
+# Build
+# =========================
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+publish/
+out/
+
+# =========================
+# User-specific files
+# =========================
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Visual Studio
+# =========================
+.vs/
+TestResults/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# Rider / JetBrains
+# =========================
+.idea/
+
+# =========================
+# NuGet
+# =========================
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# =========================
+# ASP.NET / IIS Express
+# =========================
+iisexpress/
+*.dbmdl
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Environment / Secrets
+# =========================
+appsettings.json
+appsettings.*.json
+secrets.json
+.env
+.env.*
+
+# =========================
+# Generated files
+# =========================
+Generated/
+wwwroot/dist/
+wwwroot/lib/
+
+# =========================
+# Coverage / Reports
+# =========================
+coverage/
+coverage.*
+*.coverage
+*.coveragexml
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+*.cache
+*.pid

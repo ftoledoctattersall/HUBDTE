@@ -1,0 +1,31 @@
+{
+  "Layout": {
+
+    "Glosas": [
+      {
+        "seq": 19,
+        "enabled": false
+      },
+      {
+        "seq": 20,
+        "enabled": false
+      },
+      {
+        "seq": 21,
+        "enabled": false
+      },
+      {
+        "seq": 22,
+        "enabled": false
+      },
+      {
+        "seq": 23,
+        "enabled": false
+      },
+      {
+        "seq": 24,
+        "enabled": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,2232 @@
+﻿{
+  "Constants": {
+    "IndicadorE": "E",
+    "IndicadorD": "D",
+    "CincoCeros": "00000",
+    "CaracterEspacio": " ",
+    "CaracterCero": "0",
+    "ResolucionSii": "0",
+    "TasaIva": "01900",
+    "Once": "11",
+    "CaracterA": "A",
+    "CaracterC": "C",
+    "Valor1": "519000"
+  },
+  "Layout": {
+
+    "HeaderLineName": "CABECERA_FACTURA_33",
+    "DetailLineName": "DETALLE_FACTURA_33",
+
+    "Glosas": [
+      {
+        "seq": 1,
+        "code": "GSON",
+        "valueJsonPath": "totales.totalPalabras"
+      },
+      {
+        "seq": 2,
+        "code": "GBODEGA",
+        "valueJsonPath": "document.bodega"
+      },
+      {
+        "seq": 3,
+        "code": "GTCAMB",
+        "valueJsonPath": "totales.dolar"
+      },
+      {
+        "seq": 4,
+        "code": "GDOLARES",
+        "valueJsonPath": "totales.totalDolares"
+      },
+
+      {
+        "seq": 5,
+        "code": "GMATRIZ",
+        "valueConstantKey": "source.company.matriz"
+      },
+      {
+        "seq": 6,
+        "code": "GGIRO",
+        "valueJsonPath": "source.company.giro"
+      },
+      {
+        "seq": 7,
+        "code": "GGIRO",
+        "valueJsonPath": "source.company.giro"
+      },
+      {
+        "seq": 8,
+        "code": "GTELEFONO",
+        "valueJsonPath": "source.company.fono"
+      },
+      {
+        "seq": 9,
+        "code": "GFAX",
+        "valueJsonPath": "source.company.fax"
+      },
+      {
+        "seq": 10,
+        "code": "GCASILLA",
+        "valueJsonPath": "source.company.casilla"
+      },
+      {
+        "seq": 11,
+        "code": "GURL",
+        "valueJsonPath": "source.company.url"
+      },
+      {
+        "seq": 12,
+        "code": "GEMAIL",
+        "valueJsonPath": "source.company.correo"
+      },
+      {
+        "seq": 13,
+        "code": "GLOGO",
+        "valueJsonPath": "logo"
+      },
+      {
+        "seq": 14,
+        "code": "GSUCURSALES",
+        "valueJsonPath": "Sucursales.sucursal01"
+      },
+      {
+        "seq": 15,
+        "code": "GUSUARIO",
+        "valueJsonPath": "document.vendedor.nombre"
+      },
+
+      {
+        "seq": 16,
+        "code": "GESPECIAL1",
+        "valueLiteral": ""
+      },
+
+      {
+        "seq": 17,
+        "code": "GMONEDAPAGO",
+        "valueJsonPath": "document.moneda"
+      },
+      {
+        "seq": 18,
+        "code": "GSUCURSAL1",
+        "valueJsonPath": "Sucursales.sucursal01"
+      },
+      {
+        "seq": 19,
+        "code": "GSUCURSAL2",
+        "valueJsonPath": "Sucursales.sucursal02"
+      },
+      {
+        "seq": 20,
+        "code": "GSUCURSAL3",
+        "valueJsonPath": "Sucursales.sucursal03"
+      },
+      {
+        "seq": 21,
+        "code": "GSUCURSAL4",
+        "valueJsonPath": "Sucursales.sucursal04"
+      },
+      {
+        "seq": 22,
+        "code": "GSUCURSAL5",
+        "valueJsonPath": "Sucursales.sucursal05"
+      },
+      {
+        "seq": 23,
+        "code": "GSUCURSAL6",
+        "valueJsonPath": "Sucursales.sucursal06"
+      },
+
+      {
+        "seq": 24,
+        "code": "GLINEAVTA",
+        "valueJsonPath": "Adicional.adicional19"
+      }
+    ],
+
+    "HeaderFields": [
+      {
+        "Name": "IndicadorE_E1",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "TipoDte_E2",
+        "Length": 3,
+        "PadChar": "0",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "Folio_E3",
+        "Length": 10,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "DocDate_E4",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": true
+      },
+      {
+        "Name": "CaracterEspacio_1_E5",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_2_E6",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_3_E7",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterCero_1_E8",
+        "Length": 1,
+        "PadChar": "0",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "CaracterCero_2_E9",
+        "Length": 1,
+        "PadChar": "0",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "CondicionPago_E10",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_4_E11",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_5_E12",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_6_E13",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_7_E14",
+        "Length": 2,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_8_E15",
+        "Length": 4,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "DiasPago_E16",
+        "Length": 3,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "DueDate_E17",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": true
+      },
+      {
+        "Name": "RutEmisor_E18",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "DVEmisor_E19",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "ResolucionSii_E20",
+        "Length": 6,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+
+      {
+        "Name": "RazonEmisor_E21",
+        "Length": 100,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+
+      {
+        "Name": "GiroEmisor_E22",
+        "Length": 80,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_9_E23",
+        "Length": 5,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "SucursalNombre_E24",
+        "Length": 30,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "SucSII_E25",
+        "Length": 9,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+
+      {
+        "Name": "Direccion_E26",
+        "Length": 60,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Comuna_E27",
+        "Length": 20,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Ciudad_E28",
+        "Length": 15,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "NombreVendedor_E29",
+        "Length": 60,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_10_E30",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_11_E31",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "RutReceptor_E32",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "DVReceptor_E33",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "CardcodeReceptor_E34",
+        "Length": 20,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "NombreReceptor_E35",
+        "Length": 100,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "GiroReceptor_E36",
+        "Length": 40,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "ContactoReceptor_E37",
+        "Length": 80,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "DireccionReceptor_E38",
+        "Length": 60,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "ComunaReceptor_E39",
+        "Length": 20,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "CiudadReceptor_E40",
+        "Length": 15,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_12_E41",
+        "Length": 60,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_13_E42",
+        "Length": 20,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_14_E43",
+        "Length": 15,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_15_E44",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_16_E45",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_17_E46",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_18_E47",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_19_E48",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "DireccionDespacho_E49",
+        "Length": 60,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "ComunaDespacho_E50",
+        "Length": 20,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "CiudadDespacho_E51",
+        "Length": 15,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "MontoNeto_E52",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "MontoExento_E53",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_20_E54",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "TasaIva_E55",
+        "Length": 5,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "MontoIva_E56",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_21_E57",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_22_E58",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_23_E59",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "Total_E60",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_24_E61",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_25_E62",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_26_E63",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_27_E64",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "Sistema_E65",
+        "Length": 10,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "NombreVendedor2_E66",
+        "Length": 20,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Template_E67",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Once_E68",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "Impresora_E69",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Imprimir_E70",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterA_E71",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterCero_3_E72",
+        "Length": 1,
+        "PadChar": "0",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "CaracterEspacio_28_E73",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_29_E74",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "Copias_E75",
+        "Length": 2,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "Valor1_E76",
+        "Length": 6,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterEspacio_30_E77",
+        "Length": 20,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "CaracterC_E78",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      }
+    ],
+
+    "HeaderMap": [
+      {
+        "FieldName": "IndicadorE_E1",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "E"
+      },
+      {
+        "FieldName": "TipoDte_E2",
+        "JsonPath": "document.tipoDte",
+        "Transform": "ZeroPadLeft",
+        "TransformArg": "3"
+      },
+      {
+        "FieldName": "Folio_E3",
+        "JsonPath": "document.folio",
+        "Transform": "ZeroPadLeft",
+        "TransformArg": "None"
+      },
+      {
+        "FieldName": "DocDate_E4",
+        "JsonPath": "document.fechaEmision",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "CaracterEspacio_1_E5",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_2_E6",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_3_E7",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterCero_1_E8",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterCero"
+      },
+      {
+        "FieldName": "CaracterCero_2_E9",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterCero"
+      },
+      {
+        "FieldName": "CondicionPago_E10",
+        "JsonPath": "document.condicionPago.tipo",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "CaracterEspacio_4_E11",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_5_E12",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_6_E13",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_7_E14",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_8_E15",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "DiasPago_E16",
+        "JsonPath": "document.condicionPago.dias",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "DueDate_E17",
+        "JsonPath": "document.fechaVencimiento",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "RutEmisor_E18",
+        "JsonPath": "source.company.RutEmisor",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "DVEmisor_E19",
+        "JsonPath": "source.company.dvEmisor",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "ResolucionSii_E20",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "ResolucionSii"
+      },
+      {
+        "FieldName": "RazonEmisor_E21",
+        "JsonPath": "source.company.razon",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "GiroEmisor_E22",
+        "JsonPath": "source.company.giro",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "CaracterEspacio_9_E23",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "SucursalNombre_E24",
+        "JsonPath": "source.company.sucursal.nombre",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "SucSII_E25",
+        "JsonPath": "source.company.sucursal.sucSII",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "Direccion_E26",
+        "JsonPath": "source.company.sucursal.direccion",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "Comuna_E27",
+        "JsonPath": "source.company.sucursal.comuna",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "Ciudad_E28",
+        "JsonPath": "source.company.sucursal.ciudad",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "NombreVendedor_E29",
+        "JsonPath": "document.vendedor.nombre",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "CaracterEspacio_10_E30",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_11_E31",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "RutReceptor_E32",
+        "JsonPath": "receptor.rut",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "DVReceptor_E33",
+        "JsonPath": "receptor.dv",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "CardcodeReceptor_E34",
+        "JsonPath": "receptor.cardCode",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "NombreReceptor_E35",
+        "JsonPath": "receptor.nombre",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "GiroReceptor_E36",
+        "JsonPath": "receptor.giro",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "ContactoReceptor_E37",
+        "JsonPath": "receptor.contacto",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "DireccionReceptor_E38",
+        "JsonPath": "receptor.direccion",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "ComunaReceptor_E39",
+        "JsonPath": "receptor.comuna",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "CiudadReceptor_E40",
+        "JsonPath": "receptor.ciudad",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "CaracterEspacio_12_E41",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_13_E42",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_14_E43",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_15_E44",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_16_E45",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_17_E46",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_18_E47",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_19_E48",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "DireccionDespacho_E49",
+        "JsonPath": "despacho.direccion",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "ComunaDespacho_E50",
+        "JsonPath": "despacho.comuna",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "CiudadDespacho_E51",
+        "JsonPath": "despacho.ciudad",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "montoNeto_E52",
+        "JsonPath": "totales.comuna",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "montoExento_E53",
+        "JsonPath": "totales.ciudad",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "CaracterEspacio_20_E54",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "TasaIva_E55",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "TasaIva"
+      },
+      {
+        "FieldName": "MontoIva_E56",
+        "JsonPath": "totales.iva",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "CaracterEspacio_21_E57",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_22_E58",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_23_E59",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "Total_E60",
+        "JsonPath": "totales.total",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "CaracterEspacio_24_E61",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_25_E62",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_26_E63",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_27_E64",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "Sistema_E65",
+        "JsonPath": "source.system",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "NombreVendedor2_E66",
+        "JsonPath": "document.vendedor.nombre",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "Template_E67",
+        "JsonPath": "document.template",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "Once_E68",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "Once"
+      },
+      {
+        "FieldName": "Impresora_E69",
+        "JsonPath": "impresion.impresora",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "Imprimir_E70",
+        "JsonPath": "impresion.imprimir",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "CaracterA_E71",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterA"
+      },
+      {
+        "FieldName": "CaracterCero_3_E72",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterCero"
+      },
+      {
+        "FieldName": "CaracterEspacio_28_E73",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterEspacio_29_E74",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "Copias_E75",
+        "JsonPath": "impresion.copias",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "Valor1_E76",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "Valor1"
+      },
+      {
+        "FieldName": "CaracterEspacio_30_E77",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterEspacio"
+      },
+      {
+        "FieldName": "CaracterC_E78",
+        "JsonPath": "",
+        "Transform": "Literal",
+        "TransformArg": "CaracterC"
+      }
+    ],
+
+    "DetailFields": [
+      {
+        "Name": "Indicador_D1",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": false,
+        "Trim": false
+      },
+      {
+        "Name": "LineNo_D2",
+        "Length": 4,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "LineNoRep_D3",
+        "Length": 4,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "TipoCodItem_D4",
+        "Length": 6,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "ItemCode_D5",
+        "Length": 35,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "Blank_D6",
+        "Length": 6,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D7",
+        "Length": 35,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D8",
+        "Length": 6,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D9",
+        "Length": 35,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D10",
+        "Length": 6,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D11",
+        "Length": 35,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D12",
+        "Length": 6,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D13",
+        "Length": 35,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Iva_D14",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "Descripcion_D15",
+        "Length": 80,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "Blank_D16",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D17",
+        "Length": 4,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D18",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Cantidad_D19",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "Blank_D20",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D21",
+        "Length": 35,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D22",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D23",
+        "Length": 35,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D24",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D25",
+        "Length": 35,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D26",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D27",
+        "Length": 35,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D28",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D29",
+        "Length": 35,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D30",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D31",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D32",
+        "Length": 4,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Price_D33",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "Blank_D34",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D35",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D36",
+        "Length": 10,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D37",
+        "Length": 5,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D38",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D39",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D40",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D41",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D42",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D43",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D44",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D45",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D46",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D47",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D48",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D49",
+        "Length": 5,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D50",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D51",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D52",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D53",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D54",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D55",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D56",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D57",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D58",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D59",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D60",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D61",
+        "Length": 6,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "MontoItem_D62",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "DescAdic_D63",
+        "Length": 1000,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": true
+      },
+      {
+        "Name": "Blank_D64",
+        "Length": 3,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D65",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D66",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D67",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D68",
+        "Length": 10,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D69",
+        "Length": 10,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D70",
+        "Length": 10,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D71",
+        "Length": 10,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D72",
+        "Length": 10,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D73",
+        "Length": 6,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D74",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D75",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D76",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D77",
+        "Length": 18,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D78",
+        "Length": 2,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D79",
+        "Length": 8,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D80",
+        "Length": 1,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D81",
+        "Length": 6,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D82",
+        "Length": 14,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D83",
+        "Length": 80,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D84",
+        "Length": 10,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D85",
+        "Length": 5,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D86",
+        "Length": 14,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D87",
+        "Length": 80,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D88",
+        "Length": 20,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D89",
+        "Length": 3,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D90",
+        "Length": 3,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      },
+      {
+        "Name": "Blank_D91",
+        "Length": 6,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      }
+    ],
+
+    "DetailMap": [
+      {
+        "FieldName": "Indicador_D1",
+        "Transform": "Literal",
+        "TransformArg": "D"
+      },
+      {
+        "FieldName": "LineNo_D2",
+        "JsonPath": "detalle[].linea",
+        "TransformArg": "None"
+      },
+      {
+        "FieldName": "LineNoRep_D3",
+        "JsonPath": "detalle[].linea",
+        "TransformArg": "None"
+      },
+      {
+        "FieldName": "TipoCodItem_D4",
+        "JsonPath": "detalle[].tipoCodigo",
+        "Transform": "Trim"
+      },
+      {
+        "FieldName": "ItemCode_D5",
+        "JsonPath": "detalle[].itemcode",
+        "Transform": "Trim"
+      },
+      {
+        "FieldName": "Blank_D6",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D7",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D8",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D9",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D10",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D11",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D12",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D13",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Iva_D14",
+        "JsonPath": "detalle[].afectoIva",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "Descripcion_D15",
+        "JsonPath": "detalle[].Descripcion",
+        "Transform": "Trim"
+      },
+      {
+        "FieldName": "Blank_D16",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D17",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D18",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Cantidad_D19",
+        "JsonPath": "detalle[].Cantidad",
+        "Transform": "Trim"
+      },
+      {
+        "FieldName": "Blank_D20",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D21",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D22",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D23",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D24",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D25",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D26",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D27",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D28",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D29",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D30",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D31",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D32",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Price_D33",
+        "JsonPath": "detalle[].precioUnitario",
+        "Transform": "Trim"
+      },
+      {
+        "FieldName": "Blank_D34",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D35",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D36",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D37",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D38",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D39",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D40",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D41",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D42",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D43",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D44",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D45",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D46",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D47",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D48",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D49",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D50",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D51",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D52",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D53",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D54",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D55",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D56",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D57",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D58",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D59",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D60",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D61",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "MontoItem_D62",
+        "JsonPath": "detalle[].montoItem",
+        "Transform": "None"
+      },
+      {
+        "FieldName": "DescAdic_D63",
+        "JsonPath": "detalle[].observacion",
+        "Transform": "Trim"
+      },
+      {
+        "FieldName": "Blank_D64",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D65",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D66",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D67",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D68",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D69",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D70",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D71",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D72",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D73",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D74",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D75",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D76",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D77",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D78",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D79",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D80",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D81",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D82",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D83",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D84",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D85",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D86",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D87",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D88",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D89",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D90",
+        "Transform": "Literal",
+        "TransformArg": ""
+      },
+      {
+        "FieldName": "Blank_D91",
+        "Transform": "Literal",
+        "TransformArg": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "Layout": {
+
+    "HeaderFields": [
+
+      {
+        "Name": "SucursalNombre_E24",
+        "Length": 30,
+        "PadChar": " ",
+        "PadLeft": true,
+        "Trim": false
+      }
+
+    ],
+    "HeaderMap": [
+
+      {
+        "FieldName": "SucursalNombre_E24",
+        "JsonPath": "Adicional.Adicional20",
+        "TransformArg": "None"
+      }
+
+    ],
+
+    "Glosas": [
+      {
+        "seq": 16,
+        "code": "GSUCURSAL1",
+        "valueJsonPath": "Sucursales.sucursal01"
+      },
+      {
+        "seq": 17,
+        "code": "GSUCURSAL2",
+        "valueJsonPath": "Sucursales.sucursal02"
+      },
+      {
+        "seq": 18,
+        "code": "GSUCURSAL3",
+        "valueJsonPath": "Sucursales.sucursal03"
+      },
+      {
+        "seq": 19,
+        "code": "GSUCURSAL4",
+        "valueJsonPath": "Sucursales.sucursal04"
+      },
+      {
+        "seq": 20,
+        "code": "GSUCURSAL5",
+        "valueJsonPath": "Sucursales.sucursal05"
+      },
+      {
+        "seq": 21,
+        "code": "GSUCURSAL6",
+        "valueJsonPath": "Sucursales.sucursal06"
+      },
+      {
+        "seq": 22,
+        "enabled": false
+      },
+      {
+        "seq": 23,
+        "enabled": false
+      },
+      {
+        "seq": 24,
+        "enabled": false
+      }
+    ]
+  }
+}
+
+
+      
